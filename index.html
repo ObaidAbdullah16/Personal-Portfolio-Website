@@ -2,100 +2,157 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My Resume</title>
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obaid Abdullah - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <img src="./obaid11.jpg" alt="Obaid's Picture" height="180" />
-    <h1><u>Obaid Abdullah</u></h1>
-    <a href="https://github.com/ObaidAbdullah16">github</a>
-    <a href="https://www.linkedin.com/in/obaid-abdullah-a66556283/">linkedin</a>
-    <hr />
-    <h2>Summary </h2>
-    <p>
-      I am an open source enthusiast and mainly interested in cloud and devops and want to
-      continue my journey exploring more about open source and future of web
-    </p>
-    <hr />
-    <h2>Education </h2>
-    <ul>
-      <li>School - Takshshela Junior College, Ujjain (2010-2022)</li>
-      <li>
-        College - Institute of Engineering & Technology, DAVV, Indore(2023-2027)
-      </li>
-    </ul>
-    <hr />
-    <h2>Work Experience </h2>
-    <ul>
-      <li>
-        No work experience yet- still in college 3rd year learning skills to
-        land my first internship
-      </li>
-    </ul>
-    <hr />
-    <h2>Skills</h2>
-    <ul>
-      <li>html, css, javascript</li>
-      <li>C++, Java and Python</li>
-      <li>PostgreSQL, AWS, git and github</li>
-    </ul>
-    <hr />
-    <h2>Awards and Certifications</h2>
-    <img
-      src="./Certificate_mySQl_udemy.jpg"
-      alt="Mysql certification udemy"
-      height="190"
-    />
-    <li>MySQL certificate from Jose Portilla(Udemy)</li>
-    <br></br>
-    <img
-      src="./Git cource completion certificate photo.jpg"
-      alt="git and github certification udemy"
-      height="190"
-    />
-    <li>Git & Github certificate from Colt Steele(Udemy)</li>
-    <br></br>
-    <img
-      src="./AWS cloud practitioner.jpg"
-      alt="aws cloud practitioner certification udemy"
-      height="190"
-    />
-    <li>MySQL certificate from Stephane Maarek(Udemy)</li>
-    <br></br>
-    <hr />
+    <!-- Header Section -->
+    <div class="header">
+      <img src="./obaid11.jpg" alt="Obaid Abdullah" class="profile-pic" />
+      <h1>Obaid Abdullah</h1>
+      <p class="tagline">Cloud & DevOps Enthusiast | Open Source Contributor</p>
+      <div class="social-links">
+        <a href="https://github.com/ObaidAbdullah16" target="_blank">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/obaid-abdullah-a66556283/"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </div>
+    </div>
 
-    <h2>Projects</h2>
-    <ul>
-      
-      <li>Project 1: Personal Portfolio Website</li>
-      <ul>
-        <a href="./project1.html"><li>Live Link</li></a>
-        <a href="./project1.html"><li>Github Repository</li></a>
-        <li>Tech Stack : html, css, javascript</li>
-      </ul>
-      <br></br>
-      <li>Project 1: Personal Portfolio Website</li>
-      <ul>
-        <a href="./project1.html"><li>Live Link</li></a>
-        <a href="./project1.html"><li>Github Repository</li></a>
-        <li>Tech Stack : html, css, javascript</li>
-      </ul>
-      <br></br>
-      <li>Project 1: Personal Portfolio Website</li>
-      <ul>
-        <a href="./project1.html"><li>Live Link</li></a>
-        <a href="./project1.html"><li>Github Repository</li></a>
-        <li>Tech Stack : html, css, javascript</li>
-      </ul>
-      <br></br>
-    </ul>
-    <hr />
-    <h2>Other </h2>
-    <ul>
-      <a href="./Hobbies.html"><li>My Hobbies</li></a>
-      <a href="./contact.html"><li>Contact ME</li></a>
-    </ul>
-    <footer>© Obaid Abdullah. All rights reserved</footer>
+    <!-- About Section -->
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+        I am an open source enthusiast mainly interested in cloud and DevOps,
+        continuing my journey exploring more about open source and the future of
+        web technology. I'm currently a 3rd year student at Institute of
+        Engineering & Technology, DAVV, Indore, and I'm actively learning and
+        building skills to land my first internship in the tech industry.
+      </p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section gray-bg">
+      <h2>Education</h2>
+      <div class="education-container">
+        <div class="card">
+          <h3>School</h3>
+          <p>Takshshela Junior College, Ujjain</p>
+          <p class="year">2010 - 2022</p>
+        </div>
+        <div class="card">
+          <h3>College</h3>
+          <p>Institute of Engineering & Technology, DAVV, Indore</p>
+          <p class="year">2023 - 2027</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="card">
+          <h3>Web Technologies</h3>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="card">
+          <h3>Programming Languages</h3>
+          <p>C++, Java, Python</p>
+        </div>
+        <div class="card">
+          <h3>Tools & Technologies</h3>
+          <p>PostgreSQL, AWS, Git, GitHub</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section gray-bg">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive portfolio website showcasing my skills, projects, and
+            experience.
+          </p>
+          <p class="tech-stack">Tech: HTML, CSS, JavaScript</p>
+          <a href="./project1.html">Live Demo</a> |
+          <a href="./project1.html">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Project Coming Soon</h3>
+          <p>
+            Currently working on exciting new projects. Stay tuned for updates!
+          </p>
+          <p class="tech-stack">Tech: HTML, CSS, JavaScript</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Project Coming Soon</h3>
+          <p>
+            More projects are in development. Check back later for more details!
+          </p>
+          <p class="tech-stack">Tech: HTML, CSS, JavaScript</p>
+          <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="section">
+      <h2>Certifications</h2>
+      <div class="cert-container">
+        <div class="cert-card">
+          <img src="./Certificate_mySQl_udemy.jpg" alt="MySQL Certification" />
+          <h3>MySQL Certificate</h3>
+          <p>Jose Portilla (Udemy)</p>
+        </div>
+        <div class="cert-card">
+          <img
+            src="./Git cource completion certificate photo.jpg"
+            alt="Git & GitHub Certification"
+          />
+          <h3>Git & GitHub Certificate</h3>
+          <p>Colt Steele (Udemy)</p>
+        </div>
+        <div class="cert-card">
+          <img
+            src="./AWS cloud practitioner.jpg"
+            alt="AWS Cloud Practitioner"
+          />
+          <h3>AWS Cloud Practitioner</h3>
+          <p>Stephane Maarek (Udemy)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="section gray-bg">
+      <h2>Get In Touch</h2>
+      <p>
+        I'm currently looking for internship opportunities. Feel free to reach
+        out!
+      </p>
+      <div class="contact-buttons">
+        <a href="./contact.html" class="button">Contact Me</a>
+        <a href="./Hobbies.html" class="button">My Hobbies</a>
+        <a href="./resume.pdf" class="button" target="_blank"
+          >Download Resume</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2024 Obaid Abdullah. All rights reserved</p>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
