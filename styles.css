@@ -88,7 +88,15 @@ body {
 .card h3 {
   color: #4a5568;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+}
+
+/*Simple Headings*/
+.pro-head {
+  font-size: 1.8rem;
+}
+#pro-heading {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .year {
