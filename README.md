@@ -81,7 +81,7 @@ npx http-server
 
 ## 🔗 Live Website
 
-Visit the live website: [Your Amplify URL here]
+Visit the live website: [https://main.d1yho4yy7tphgf.amplifyapp.com/]
 
 ## 📬 Contact
 
