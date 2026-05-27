@@ -1,193 +1,1184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Obaid Abdullah - Portfolio</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Obaid Abdullah | DevOps & Cloud Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Obaid Abdullah — Cloud-native and DevOps-focused Computer Engineering student experienced in CI/CD automation, AWS, Docker, Kubernetes, and open-source contributions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <!-- Header Section -->
-    <div class="header">
-      <img src="./obaid11.jpg" alt="Obaid Abdullah" class="profile-pic" />
-      <h1>Obaid Abdullah</h1>
-      <p class="tagline">Cloud & DevOps Enthusiast | Open Source Contributor</p>
-      <div class="social-links">
-        <a href="https://github.com/ObaidAbdullah16" target="_blank">GitHub</a>
+    <!-- ===== Navigation ===== -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">&lt;OA /&gt;</a>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about"><span class="nav-number">01.</span> About</a></li>
+          <li><a href="#skills"><span class="nav-number">02.</span> Skills</a></li>
+          <li><a href="#projects"><span class="nav-number">03.</span> Projects</a></li>
+          <li><a href="#opensource"><span class="nav-number">04.</span> Open Source</a></li>
+          <li><a href="#education"><span class="nav-number">05.</span> Education</a></li>
+          <li><a href="#hobbies"><span class="nav-number">06.</span> Hobbies</a></li>
+          <li><a href="#contact"><span class="nav-number">07.</span> Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="hero">
+      <div class="hero-content">
+        <p class="hero-greeting fade-in">Hi, my name is</p>
+        <h1 class="hero-name fade-in">Obaid Abdullah.</h1>
+        <h2 class="hero-tagline fade-in">I build things for the cloud.</h2>
+        <p class="hero-description fade-in">
+          Cloud-native and DevOps-focused Computer Engineering student
+          experienced in building CI/CD pipelines, containerized applications,
+          and scalable AWS-based systems. Actively contributing to open source
+          and interested in cloud-native technologies.
+        </p>
+        <div class="hero-cta fade-in">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-socials">
+        <a
+          href="https://github.com/ObaidAbdullah16"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+        </a>
         <a
           href="https://www.linkedin.com/in/obaid-abdullah-a66556283/"
           target="_blank"
-          >LinkedIn</a
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-      </div>
-    </div>
-
-    <!-- About Section -->
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-        I am an open source enthusiast mainly interested in cloud and DevOps,
-        continuing my journey exploring more about open source and the future of
-        web technology. I'm currently a 3rd year student at Institute of
-        Engineering & Technology, DAVV, Indore, and I'm actively learning and
-        building skills to land my first internship in the tech industry.
-      </p>
-    </div>
-
-    <!-- Education Section -->
-    <div class="section gray-bg">
-      <h2>Education</h2>
-      <div class="education-container">
-        <div class="card">
-          <h3>School</h3>
-          <p>Takshshela Junior College, Ujjain</p>
-          <p class="year">2010 - 2022</p>
-        </div>
-        <div class="card">
-          <h3>College</h3>
-          <p>Institute of Engineering & Technology, DAVV, Indore</p>
-          <p class="year">2023 - 2027</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div class="section">
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="card">
-          <h3>Web Technologies</h3>
-          <p>HTML, CSS, JavaScript</p>
-        </div>
-        <div class="card">
-          <h3>Programming Languages</h3>
-          <p>C++, Java, Python</p>
-        </div>
-        <div class="card">
-          <h3>Tools & Technologies</h3>
-          <p>PostgreSQL, AWS, Git, GitHub</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="section gray-bg">
-      <h2 id="pro-heading">PROJECTS</h2>
-      <div class="projects-container">
-        <div class="card">
-          <h3 class="pro-head">Personal Portfolio Website</h3>
-          <p>
-            A responsive portfolio website showcasing my skills, projects, and
-            experience.
-          </p>
-          <p class="tech-stack">Tech: HTML, CSS, JavaScript, git & github</p>
-          <a href="https://main.d1yho4yy7tphgf.amplifyapp.com/">Live Demo</a> |
-          <a
-            href="https://github.com/ObaidAbdullah16/Personal-Portfolio-Website.git"
-            >GitHub</a
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-        </div>
-        <div class="card">
-          <h3 class="pro-head">Expense Tracker</h3>
-          <p>
-            An expense tracker that tracks your daily expenses for each date and
-            you can add new expenses as well as delete them(Hosted on aws ec2).
-          </p>
-          <p class="tech-stack">
-            Tech: HTML, CSS, JavaScript, Bootstrap, AWS Ec2(For hosting),
-            postgreSQL(For database), git & github
-          </p>
-          <a href="http://13.201.76.0:3000/">Live Demo</a> |
-          <a href="https://github.com/ObaidAbdullah16/Expense-Tracker.git"
-            >GitHub</a
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+            ></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:obaidabdullah1610@gmail.com" aria-label="Email">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
-        </div>
-        <div class="card">
-          <h3 class="pro-head">Quiz App - AI generated quiz</h3>
-          <p>
-            Uses gemini to generate random topic and then generate 5 random
-            questions on it
-          </p>
-          <p class="tech-stack">
-            Tech: HTML, CSS, JavaScript, AWS s3(for hosting), gemini
-            gemini-2.5-flash model, Bootstrap
-          </p>
-          <a
-            href="http://portfolio-website-hosting-obaid-abdullah.s3-website.ap-south-1.amazonaws.com"
-            >Live Demo</a
-          >
-          | <a href="https://github.com/ObaidAbdullah16/Quiz-App.git">GitHub</a>
-        </div>
-        <div class="card">
-          <h3 class="pro-head">
-            static website hosting and serverless lead capture on aws
-          </h3>
-          <p>
-            uses aws s3 for hosting a sample static website and lambda to
-            capture lead from the website and store data in dynamo db. Also
-            using cloudfront for distribution and a custom domain(jhgalkj.xyz).
-            And using aws SES service to send and receive email
-          </p>
-          <p class="tech-stack">Tech: JavaScript, aws, git and github.</p>
-          <a href="https://jhgalkj.xyz/">Live Demo</a>
-          |
-          <a
-            href="https://github.com/ObaidAbdullah16/serverless-lambda-project.git"
-            >GitHub</a
-          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            ></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <div class="social-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">
+          <span class="section-number">01.</span> About Me
+        </h2>
+        <div class="about-content">
+          <div class="about-text fade-in">
+            <p>
+              Hello! I'm Obaid, a Cloud-native and DevOps-focused Computer
+              Engineering student at
+              <a href="#education" class="inline-link">IET DAVV, Indore</a>. I'm
+              passionate about building automated infrastructure, CI/CD
+              pipelines, and scalable cloud systems.
+            </p>
+            <p>
+              My journey into tech has been driven by a deep interest in
+              <span class="highlight">open-source collaboration</span>,
+              <span class="highlight">cloud-native architectures</span>, and
+              <span class="highlight">developer tooling</span>. I enjoy
+              contributing to projects that make developer workflows better and
+              writing technical documentation that helps others learn.
+            </p>
+            <p>
+              I've contributed to open-source organizations like
+              <span class="highlight">CCExtractor</span>,
+              <span class="highlight">Kyverno</span>,
+              <span class="highlight">Meshery</span>, and
+              <span class="highlight">PipeCD</span>, and I actively build
+              projects that showcase real-world DevOps practices — from
+              Docker-based CI/CD pipelines to serverless AWS architectures.
+            </p>
+          </div>
+          <div class="about-image fade-in">
+            <div class="image-wrapper">
+              <img src="obaid11.jpeg" alt="Obaid Abdullah" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Certifications Section -->
-    <div class="section">
-      <h2>Certifications</h2>
-      <div class="cert-container">
-        <div class="cert-card">
-          <img src="./Certificate_mySQl_udemy.jpg" alt="MySQL Certification" />
-          <h3>MySQL Certificate</h3>
-          <p>Jose Portilla (Udemy)</p>
-        </div>
-        <div class="cert-card">
-          <img
-            src="./Git cource completion certificate photo.jpg"
-            alt="Git & GitHub Certification"
-          />
-          <h3>Git & GitHub Certificate</h3>
-          <p>Colt Steele (Udemy)</p>
-        </div>
-        <div class="cert-card">
-          <img
-            src="./AWS cloud practitioner.jpg"
-            alt="AWS Cloud Practitioner"
-          />
-          <h3>AWS Cloud Practitioner</h3>
-          <p>Stephane Maarek (Udemy)</p>
+    <!-- ===== Skills Section ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">
+          <span class="section-number">02.</span> Skills & Tech Stack
+        </h2>
+        <div class="skills-grid fade-in">
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              Languages
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Go</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+              Cloud & AWS
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">EC2</span>
+              <span class="skill-tag">S3</span>
+              <span class="skill-tag">Lambda</span>
+              <span class="skill-tag">API Gateway</span>
+              <span class="skill-tag">DynamoDB</span>
+              <span class="skill-tag">Route 53</span>
+              <span class="skill-tag">CloudFront</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                ></path>
+              </svg>
+              DevOps & CI/CD
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">CI/CD Pipelines</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              Container Orchestration
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Kubernetes</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+              Database
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                ></path>
+              </svg>
+              Tools & Infrastructure
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">YAML</span>
+              <span class="skill-tag">Cloud-Native Architectures</span>
+              <span class="skill-tag">Markdown</span>
+              <span class="skill-tag">Technical Writing</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Contact Section -->
-    <div class="section gray-bg">
-      <h2>Get In Touch</h2>
-      <p>
-        I'm currently looking for internship opportunities. Feel free to reach
-        out!
-      </p>
-      <div class="contact-buttons">
-        <a href="./contact.html" class="button">Contact Me</a>
-        <a href="./Hobbies.html" class="button">My Hobbies</a>
-        <a href="./Final_Resume.pdf" class="button" target="_blank"
-          >Download Resume</a
-        >
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">
+          <span class="section-number">03.</span> Things I've Built
+        </h2>
+        <div class="projects-grid">
+          <!-- Project 1: CI/CD Pipeline -->
+          <div class="project-card fade-in">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ObaidAbdullah16/ci-cd-pipeline-demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://pipeline.obaidinfo.xyz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live Demo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              CI/CD Pipeline with Docker & GitHub Actions
+            </h3>
+            <p class="project-description">
+              Automated Docker-based CI/CD pipeline to build, test, and deploy a
+              Node.js application to AWS EC2 using GitHub Actions. Reduced
+              deployment time from ~20 minutes to under 3 minutes through fully
+              automated workflows.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>Docker</span>
+              <span>GitHub Actions</span>
+              <span>AWS EC2</span>
+              <span>Linux</span>
+            </div>
+          </div>
+
+          <!-- Project 2: Serverless Lambda -->
+          <div class="project-card fade-in">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ObaidAbdullah16/serverless-lambda-project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live Demo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              Serverless Lead Processing System (AWS)
+            </h3>
+            <p class="project-description">
+              Designed and deployed a serverless lead processing system using
+              AWS Lambda, API Gateway, and DynamoDB. Implemented event-driven
+              workflow with automated email notifications via AWS SES.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>AWS Lambda</span>
+              <span>API Gateway</span>
+              <span>DynamoDB</span>
+              <span>SES</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Expense Tracker -->
+          <div class="project-card fade-in">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ObaidAbdullah16/Expense-Tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://expense.obaidinfo.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live Demo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Expense Tracker (AWS Deployment)</h3>
+            <p class="project-description">
+              Developed a full-stack expense tracking application with REST APIs
+              and PostgreSQL. Deployed backend on AWS EC2 with Linux server
+              configuration. Focused on backend performance and efficient data
+              handling.
+            </p>
+            <div class="project-tags">
+              <span>Node.js</span>
+              <span>PostgreSQL</span>
+              <span>AWS EC2</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Quiz App -->
+          <div class="project-card fade-in">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ObaidAbdullah16/Quiz-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://quiz.obaidinfo.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live Demo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Quiz App</h3>
+            <p class="project-description">
+              An interactive quiz application built with vanilla JavaScript.
+              Features dynamic question rendering, score tracking, and a clean
+              user interface for an engaging quiz-taking experience.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Project 5: Open Source Journey -->
+          <div class="project-card fade-in">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ObaidAbdullah16/open-source-journey-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://open-source-journey.obaidinfo.xyz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live Demo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              Open Source Journey (Cloud-Native & OSS Hub)
+            </h3>
+            <p class="project-description">
+              Created structured documentation and learning resources covering
+              cloud-native technologies, open-source workflows, contributor
+              practices, and DevOps concepts. Organized in a
+              contributor-friendly format to improve accessibility for new
+              learners.
+            </p>
+            <div class="project-tags">
+              <span>Markdown</span>
+              <span>GitHub</span>
+              <span>Technical Writing</span>
+              <span>Cloud-Native</span>
+            </div>
+          </div>
+
+          <!-- Project 6: Portfolio Website -->
+          <div class="project-card fade-in">
+            <div class="project-top">
+              <div class="project-folder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/ObaidAbdullah16/Personal-Portfolio-Website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="https://obaidinfo.xyz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live Demo"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-description">
+              Built a responsive personal portfolio website using HTML, CSS, and
+              JavaScript. Features a dark theme, smooth scroll animations,
+              responsive layout, and showcases projects and open-source
+              contributions.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <div class="footer">
-      <p>© 2024 Obaid Abdullah. All rights reserved</p>
-    </div>
+    <!-- ===== Open Source Section ===== -->
+    <section id="opensource" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">
+          <span class="section-number">04.</span> Open Source Contributions
+        </h2>
+        <div class="opensource-content fade-in">
+          <p class="opensource-intro">
+            I believe in the power of open source to drive innovation and
+            community growth. I actively contribute to projects that align with
+            my interests in cloud-native tooling, developer experience, and
+            technical documentation.
+          </p>
+          <div class="contributions-grid">
+            <div class="contribution-card">
+              <div class="contribution-header">
+                <h3>CCExtractor</h3>
+                <span class="contribution-badge">Open Source Organization</span>
+              </div>
+              <p>
+                Contributed documentation improvements and bug fixes including
+                memory safety improvements and C parser fixes. Submitted pull
+                requests and collaborated with maintainers through GitHub
+                discussions and review workflows.
+              </p>
+            </div>
+            <div class="contribution-card">
+              <div class="contribution-header">
+                <h3>Kyverno</h3>
+                <span class="contribution-badge">Kubernetes Policy Engine</span>
+              </div>
+              <p>
+                Contributed pull requests covering webhooks, policy generation,
+                documentation improvements, test coverage, and performance bug
+                fixes. Gained experience working with large-scale Kubernetes
+                tooling codebases.
+              </p>
+            </div>
+            <div class="contribution-card">
+              <div class="contribution-header">
+                <h3>Meshery</h3>
+                <span class="contribution-badge">Cloud Native Service Mesh</span>
+              </div>
+              <p>
+                Contributed to Meshery, a cloud-native management platform.
+                Submitted pull requests for improvements and collaborated with
+                the community on issues related to service mesh tooling and
+                cloud-native infrastructure.
+              </p>
+            </div>
+            <div class="contribution-card">
+              <div class="contribution-header">
+                <h3>PipeCD</h3>
+                <span class="contribution-badge">Continuous Delivery Platform</span>
+              </div>
+              <p>
+                Contributed to PipeCD, a continuous delivery platform for
+                declarative Kubernetes, serverless, and infrastructure
+                applications. Worked on documentation and improvements to
+                enhance the developer experience.
+              </p>
+            </div>
+          </div>
+          <div class="opensource-cta">
+            <p>
+              I've also created a structured learning hub documenting my
+              open-source journey, covering cloud-native concepts, CI/CD
+              workflows, contributor practices, and more.
+            </p>
+            <a
+              href="https://open-source-journey.obaidinfo.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Explore My Open Source Journey →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Education Section ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">
+          <span class="section-number">05.</span> Education & Certifications
+        </h2>
+        <!-- Certificate images -->
+        <div class="cert-images-grid fade-in">
+          <div class="cert-image-card">
+            <img src="AWS cloud practitioner.jpg" alt="AWS Cloud Practitioner Certificate" loading="lazy" />
+            <p>AWS Cloud Practitioner — Stephane Maarek (Udemy)</p>
+          </div>
+          <div class="cert-image-card">
+            <img src="Certificate_mySQl_udemy.jpg" alt="MySQL Certificate" loading="lazy" />
+            <p>MySQL Certificate — Jose Portilla (Udemy)</p>
+          </div>
+          <div class="cert-image-card">
+            <img src="Git cource completion certificate photo.jpg" alt="Git & GitHub Certificate" loading="lazy" />
+            <p>Git & GitHub Certificate — Colt Steele (Udemy)</p>
+          </div>
+        </div>
+        <div class="education-content fade-in">
+          <div class="education-card">
+            <div class="education-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="education-details">
+              <h3>B.E. Computer Engineering</h3>
+              <p class="education-institution">
+                Institute of Engineering & Technology, DAVV, Indore
+              </p>
+              <p class="education-year">2023 — 2027</p>
+            </div>
+          </div>
+          <div class="certifications-grid">
+            <h3 class="certifications-title">Certifications</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="9 11 12 14 22 4"></polyline>
+                  <path
+                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                  ></path>
+                </svg>
+                <span
+                  >AWS Cloud Practitioner & Solutions Architecture
+                  Coursework</span
+                >
+              </div>
+              <div class="cert-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="9 11 12 14 22 4"></polyline>
+                  <path
+                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                  ></path>
+                </svg>
+                <span>SQL Bootcamp — Udemy</span>
+              </div>
+              <div class="cert-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="9 11 12 14 22 4"></polyline>
+                  <path
+                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                  ></path>
+                </svg>
+                <span>Git & GitHub Bootcamp — Udemy</span>
+              </div>
+              <div class="cert-item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="9 11 12 14 22 4"></polyline>
+                  <path
+                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                  ></path>
+                </svg>
+                <span>Linux Administration Bootcamp — Udemy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Hobbies Section ===== -->
+    <section id="hobbies" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">
+          <span class="section-number">06.</span> Hobbies & Interests
+        </h2>
+        <div class="hobbies-content fade-in">
+          <!-- Anime -->
+          <div class="hobby-block">
+            <h3 class="hobby-title">🎬 Watching Anime</h3>
+            <p class="hobby-desc">I love watching anime — the first anime that got me invested was "Attack On Titan". Here are my top 3 favourites:</p>
+            <div class="hobby-cards">
+              <div class="hobby-card">
+                <img src="high-school-dxd.jpg" alt="High School DxD" loading="lazy" />
+                <p>High School DxD</p>
+              </div>
+              <div class="hobby-card">
+                <img src="solo leveling.jpg" alt="Solo Leveling" loading="lazy" />
+                <p>Solo Leveling</p>
+              </div>
+              <div class="hobby-card">
+                <img src="demon slayer.jpg" alt="Demon Slayer" loading="lazy" />
+                <p>Demon Slayer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Football -->
+          <div class="hobby-block">
+            <h3 class="hobby-title">⚽ Watching Football</h3>
+            <p class="hobby-desc">I love watching football, specially the Premier League — the best league in the world. I support Liverpool FC.</p>
+            <div class="hobby-cards">
+              <div class="hobby-card hobby-card-single">
+                <img src="Liverpool_FC.svg.png" alt="Liverpool FC" loading="lazy" />
+                <p>Liverpool FC — You'll Never Walk Alone</p>
+              </div>
+            </div>
+          </div>
+          <!-- Travel -->
+          <div class="hobby-block">
+            <h3 class="hobby-title">✈️ Travelling</h3>
+            <p class="hobby-desc">Although I don't travel much, I love to travel way more than I currently do. My dream destination is Japan — for the anime culture, technology, and beautiful landscapes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title fade-in">
+          <span class="section-number">07.</span> Get In Touch
+        </h2>
+        <div class="contact-content fade-in">
+          <p class="contact-text">
+            I'm currently looking for internship opportunities in DevOps and
+            Cloud Engineering. Whether you have a question, a project idea, or
+            just want to say hello — my inbox is always open!
+          </p>
+          <div class="contact-info-grid">
+            <div class="contact-info-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:obaidabdullah1610@gmail.com">obaidabdullah1610@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <div>
+                <h4>Phone</h4>
+                <span>7067230239</span>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div>
+                <h4>Location</h4>
+                <span>Indore, Madhya Pradesh, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:obaidabdullah1610@gmail.com" class="btn btn-primary">Say Hello →</a>
+            <a href="Resume.jpg" target="_blank" class="btn btn-outline">View Resume</a>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/ObaidAbdullah16" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/obaid-abdullah-a66556283/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:obaidabdullah1610@gmail.com" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer id="footer">
+      <div class="footer-content">
+        <p>Designed & Built by <span class="highlight">Obaid Abdullah</span></p>
+        <p class="footer-sub">
+          Cloud & DevOps Enthusiast | Open Source Contributor
+        </p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
