@@ -8,6 +8,7 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 
 Alternative links:
 - 🔗 [www.obaidinfo.xyz](https://www.obaidinfo.xyz)
+- 🔗 [obaidabdullah16.github.io/Personal-Portfolio-Website/](https://obaidabdullah16.github.io/Personal-Portfolio-Website/)
 
 ---
 
